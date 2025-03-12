@@ -6,7 +6,7 @@ import { ShopContext } from '../../Context/ShopContext'
 
 const ProductDisplay = (props) => {
     const { product } = props;
-    const {addToCart} = useContext(ShopContext);
+    const { addToCart } = useContext(ShopContext);
     return (
         <div className='productdisplay'>
             <div className="productdisplay-left">
@@ -35,8 +35,7 @@ const ProductDisplay = (props) => {
                     <div className="productdisplay-right-price-new">${product.new_price}</div>
                 </div>
                 <div className="productdisplay-right-description">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime aspernatur totam animi eius natus nisi, accusamus non fugiat iusto quod, molestias sapiente dolorem est ex sed possimus, maiores quasi at.
-                </div>
+                    When describing or discussing "shirt content," consider words like "designs," "graphics," "prints," "sayings," "motifs," "slogans," or even "imagery" to convey the variety of visual information or written messages that can appear on a shirt.</div>
                 <div className="productdisplay-right-size">
                     <h1>Select Size</h1>
                     <div className="productdisplay-right-sizes">
@@ -47,7 +46,7 @@ const ProductDisplay = (props) => {
                         <div>XXL</div>
                     </div>
                 </div>
-                <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
+                <button onClick={() => { addToCart(product.id) }}>ADD TO CART</button>
                 <p className='productdisplay-right-category'><span>Category : </span>Women, T-Shirt, Crop Top</p>
                 <p className='productdisplay-right-category'><span>Tags : </span>Modern, Latest</p>
 
